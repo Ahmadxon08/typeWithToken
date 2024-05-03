@@ -5,6 +5,10 @@ import './Register.scss'
 
 const Register = () => {
   return (
+
+
+
+    
     <div>
       <div className="container">
         <div className="reg_content">
