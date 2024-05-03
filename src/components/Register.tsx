@@ -1,4 +1,3 @@
-import React from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";
 import './Register.scss'
@@ -8,7 +7,7 @@ const Register = () => {
 
 
 
-    
+
     <div>
       <div className="container">
         <div className="reg_content">
