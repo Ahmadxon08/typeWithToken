@@ -1,19 +1,15 @@
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";
-import './Register.scss'
+import "./Register.scss";
 
 const Register = () => {
   return (
-
-
-
-
     <div>
       <div className="container">
         <div className="reg_content">
           <div className="back">
-            <Link to={"/login"}>
-              <IoIosArrowBack color="#000"  size={32}/>
+            <Link to={"/"}>
+              <IoIosArrowBack color="#000" size={32} />
 
               <span>Ortga</span>
             </Link>
