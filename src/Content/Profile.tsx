@@ -4,6 +4,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { RiAccountPinCircleLine } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function Profile() {
   const navigate = useNavigate();
@@ -17,7 +18,12 @@ export default function Profile() {
   };
   const handleLogOut = () => {
     navigate("/login");
-    localStorage.removeItem("user");
+    try {
+      localStorage.removeItem("user");
+      toast.success("User logged out successfully ");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -60,7 +66,7 @@ export default function Profile() {
         >
           <MenuItem onClick={handleClose}>Profile</MenuItem>
         </Link>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
+        {/* <MenuItem onClick={handleClose}>My account</MenuItem> */}
         <MenuItem onClick={handleLogOut}>Logout</MenuItem>
       </Menu>
     </div>

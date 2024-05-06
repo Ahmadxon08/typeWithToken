@@ -1,20 +1,46 @@
+import Button from "@mui/material/Button";
+import "./Service.scss";
+import { IoMdPersonAdd } from "react-icons/io";
 const Service = () => {
   return (
     <div>
       <div className="container">
         <div className="head">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          nostrum provident, inventore laboriosam, suscipit porro voluptatum
-          laudantium iusto quod ex dolores quas eum blanditiis distinctio. Iste
-          ex eius magnam rerum corrupti placeat aspernatur quia amet adipisci ad
-          quaerat, fugit ipsum, earum dolore dolor non suscipit necessitatibus
-          ut, ipsam rem ea aperiam est praesentium omnis. Expedita fuga eaque
-          voluptatem deleniti, sequi at explicabo ullam nam, nemo amet sunt.
-          Error, unde necessitatibus in voluptates, quidem nisi vitae aut
-          recusandae repellat nostrum nulla ea possimus totam! Minus illo
-          sapiente natus aliquid quod aperiam, iure, ab aspernatur laborum, est
-          at voluptatibus vitae voluptatum! Ipsum.
+          <h1>Users' information</h1>
+          <Button variant="contained">
+            <IoMdPersonAdd size={38} />
+          </Button>
         </div>
+        <table className="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry the Bird</td>
+              <td>@twitter</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

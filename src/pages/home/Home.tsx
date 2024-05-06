@@ -28,19 +28,19 @@ const Home = () => {
           </select>
         </div>
         <div className="b_footer">
-          <div className="card">
+          <div className="cardButom">
             <span>Barchasi</span>
             <p>423 ta</p>
           </div>
-          <div className="card">
+          <div className="cardButom">
             <span>Tayyor </span>
             <p>423 ta</p>
           </div>
-          <div className="card">
+          <div className="cardButom">
             <span>Tozalanmoqda </span>
             <p>423 ta</p>
           </div>
-          <div className="card">
+          <div className="cardButom">
             <span>Olib ketildi </span>
             <p>423 ta</p>
           </div>

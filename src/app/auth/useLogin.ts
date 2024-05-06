@@ -24,7 +24,7 @@ const AuthStore = (set: (produce: () => void) => void) => ({
         user
       );
       const data = await res.data;
-      localStorage.setItem("access__token", JSON.stringify(data.access_token));
+      localStorage.setItem("access_token", JSON.stringify(data.access_token));
       // console.log(data);
       set(
         produce((state: any) => {

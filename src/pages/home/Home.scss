@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-gap: 40px;
- 
+  gap: 40px;
 
   width: 100%;
   .top_content {
@@ -26,61 +25,61 @@ gap: 40px;
         font-size: 32px;
         color: rgb(31, 149, 246);
       }
-      span{
+      span {
         font-family: sans-serif;
         font-size: 26px;
         font-weight: bolder;
       }
     }
   }
-  .bottom_content{
+  .bottom_content {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     border-radius: 50px;
     height: 260px;
-    padding: 30px 50px 30px 80px ;
+    padding: 30px 50px 30px 80px;
     gap: 20px;
     background-color: rgb(240, 237, 235);
 
-    .b_head{
-        display: flex;
-        align-items: center;
-        width: 100%;
-    
-        justify-content: space-between;
-        span{
-            font-family: sans-serif;
-            font-size: 56px;
-            font-weight: bolder;
-            color: #000;
-        }
-        select{
-            outline: none;
-            padding: 10px;
-            font-size: 18px;
-            border: none;
-            border-radius: 12px;
-        }
+    .b_head {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      justify-content: space-between;
+      span {
+        font-family: sans-serif;
+        font-size: 56px;
+        font-weight: bolder;
+        color: #000;
+      }
+      select {
+        outline: none;
+        padding: 10px;
+        font-size: 18px;
+        border: none;
+        border-radius: 12px;
+      }
     }
-    .b_footer{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
-        span{
-            font-family: sans-serif;
-            font-size: 26px;
-            font-weight: bolder;
-            color: #1a1818;
-        }
-        p{
-            font-family: sans-serif;
-            font-size: 46px;
-            font-weight: bolder;
-            color: #000;
-        }
+    .b_footer {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      span {
+        font-family: sans-serif;
+        font-size: 26px;
+        font-weight: bolder;
+        color: #1a1818;
+      }
+      p {
+        font-family: sans-serif;
+        font-size: 46px;
+        font-weight: bolder;
+        color: #000;
+      }
     }
   }
 }

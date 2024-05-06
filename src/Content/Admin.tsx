@@ -14,7 +14,7 @@ const { Header, Sider, Content } = Layout;
 
 const Admin: React.FC = () => {
   const navigate = useNavigate();
-  const json = localStorage.getItem("access__token");
+  const json = localStorage.getItem("access_token");
   console.log(json);
 
   if (json) {
