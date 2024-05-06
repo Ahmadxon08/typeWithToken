@@ -1,18 +1,25 @@
+// Router.tsx
 import { Route, Routes } from "react-router-dom";
-// import Admin from "../Content/Admin";
-// import Test from "../components/Test";
-import Login from "../components/Login";
-import Register from "../components/Register";
+import Register from "../components/register/Register";
+import Admin from "../Content/Admin";
+import Profile from "../components/profile/Profile";
+import Home from "../pages/home/Home";
+import Service from "../pages/service/Service";
+import Login from '../components/login/Login';
 
 const Router = () => {
+
+
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        {/* <Route path="/" element={<Admin />}>
-          <Route index element={<Test />} />
-        </Route> */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/" element={<Admin />}>
+          <Route index element={<Home />} />
+          <Route path="/service" element={<Service />} />
+        </Route>
       </Routes>
     </div>
   );
