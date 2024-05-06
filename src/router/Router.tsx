@@ -5,11 +5,10 @@ import Admin from "../Content/Admin";
 import Profile from "../components/profile/Profile";
 import Home from "../pages/home/Home";
 import Service from "../pages/service/Service";
-import Login from '../components/login/Login';
+import Login from "../components/login/Login";
+import Notification from "../notification/Notification";
 
 const Router = () => {
-
-
   return (
     <div>
       <Routes>
@@ -21,6 +20,7 @@ const Router = () => {
           <Route path="/service" element={<Service />} />
         </Route>
       </Routes>
+      <Notification />
     </div>
   );
 };

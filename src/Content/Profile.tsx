@@ -3,9 +3,10 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { RiAccountPinCircleLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Profile() {
+  const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -13,6 +14,10 @@ export default function Profile() {
   };
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const handleLogOut = () => {
+    navigate("/login");
+    localStorage.removeItem("user");
   };
 
   return (
@@ -56,7 +61,7 @@ export default function Profile() {
           <MenuItem onClick={handleClose}>Profile</MenuItem>
         </Link>
         <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <MenuItem onClick={handleLogOut}>Logout</MenuItem>
       </Menu>
     </div>
   );

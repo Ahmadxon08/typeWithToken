@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Login.scss";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { useLogin } from "../../app/auth/useLogin";
+import { toast } from "react-toastify";
 // import { useLogin } from "../../app/auth/useLogin";
 
 interface FormData {
@@ -28,7 +29,13 @@ const Login = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await login(formData);
+    try {
+      await login(formData);
+      toast.success("Successfully logged in");
+    } catch (error) {
+      console.log(error);
+      toast.error("error message");
+    }
     navigate("/");
   };
 
